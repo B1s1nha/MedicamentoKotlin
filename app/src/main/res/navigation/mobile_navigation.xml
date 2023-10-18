@@ -27,4 +27,10 @@
         android:name="com.example.medicamentoapp.ui.metas.MetasFragment"
         android:label="@string/title_metas"
         tools:layout="@layout/fragment_metas" />
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_task"-->
+<!--        android:name="com.example.medicamentoapp.ui.task."-->
+<!--        android:label="Task"-->
+<!--        tools:layout="@layout/fragment_new_task_sheet"-->
+<!--        />-->
 </navigation>

@@ -1,4 +1,6 @@
-package com.example.medicamentoapp.ui.task
+package com.example.medicamentoapp
+
+import com.example.medicamentoapp.TaskItem
 
 interface TaskItemClickListener
 {

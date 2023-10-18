@@ -1,4 +1,4 @@
-package com.example.medicamentoapp.ui.task
+package com.example.medicamentoapp
 
 import android.content.Context
 import android.graphics.Paint
