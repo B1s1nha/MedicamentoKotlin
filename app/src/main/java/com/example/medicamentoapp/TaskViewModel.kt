@@ -39,4 +39,10 @@ class TaskViewModel: ViewModel()
             task.completedDate = LocalDate.now()
         taskItems.postValue(list)
     }
+
+    fun deleteTaskItem(taskItem: TaskItem) {
+        val list = taskItems.value
+        list?.remove(taskItem)
+        taskItems.postValue(list)
+    }
 }

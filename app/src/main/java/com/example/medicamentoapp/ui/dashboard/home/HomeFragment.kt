@@ -1,4 +1,4 @@
-package com.example.medicamentoapp.ui.home
+package com.example.medicamentoapp.ui.dashboard.home
 
 import android.os.Bundle
 import android.view.LayoutInflater

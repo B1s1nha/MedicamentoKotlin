@@ -12,4 +12,6 @@
     <string name="save">Save</string>
     <string name="name">Name</string>
     <string name="new_task">New Task</string>
+    <string name="title_task">Task</string>
+    <string name="delete">delete</string>
 </resources>

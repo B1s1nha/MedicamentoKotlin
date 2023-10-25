@@ -50,6 +50,29 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".NewTaskSheet">
+
+        <!-- ... Outros elementos de layout existentes ... -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deleteButton"
+            android:layout_width="367dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/delete"
+            android:textColor="#B00020"/>
+<!--            android:visibility="gone" -->
+
+    </LinearLayout>
+
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/timePickerButton"
         android:layout_width="369dp"

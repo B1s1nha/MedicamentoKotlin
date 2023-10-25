@@ -1,4 +1,4 @@
-package com.example.medicamentoapp.ui.home
+package com.example.medicamentoapp.ui.dashboard.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

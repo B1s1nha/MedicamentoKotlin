@@ -19,24 +19,20 @@ class NewTaskSheet(var taskItem: TaskItem?) : BottomSheetDialogFragment()
     private lateinit var taskViewModel: TaskViewModel
     private var dueTime: LocalTime? = null
 
-    @RequiresApi(Build.VERSION_CODES.O)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val activity = requireActivity()
 
-        if (taskItem != null)
-        {
+        if (taskItem != null) {
             binding.taskTitle.text = "Edit Task"
             val editable = Editable.Factory.getInstance()
             binding.name.text = editable.newEditable(taskItem!!.name)
             binding.desc.text = editable.newEditable(taskItem!!.desc)
-            if(taskItem!!.dueTime != null){
+            if (taskItem!!.dueTime != null) {
                 dueTime = taskItem!!.dueTime!!
                 updateTimeButtonText()
             }
-        }
-        else
-        {
+        } else {
             binding.taskTitle.text = "New Task"
         }
 
@@ -47,9 +43,15 @@ class NewTaskSheet(var taskItem: TaskItem?) : BottomSheetDialogFragment()
         binding.timePickerButton.setOnClickListener {
             openTimePicker()
         }
+
+        binding.deleteButton.setOnClickListener {
+            if (taskItem != null) {
+                taskViewModel.deleteTaskItem(taskItem!!)
+                dismiss()
+            }
+        }
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
     private fun openTimePicker() {
         if(dueTime == null)
             dueTime = LocalTime.now()

@@ -19,4 +19,8 @@
         android:id="@+id/navigation_metas"
         android:icon="@drawable/ic_metas_black_24dp"
         android:title="@string/title_metas" />
+    <item
+        android:id="@+id/navigation_task"
+        android:icon="@drawable/ic_metas_black_24dp"
+        android:title="@string/title_task" />
 </menu>

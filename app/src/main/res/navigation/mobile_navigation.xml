@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.medicamentoapp.ui.home.HomeFragment"
+        android:name="com.example.medicamentoapp.ui.dashboard.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
@@ -27,10 +27,10 @@
         android:name="com.example.medicamentoapp.ui.metas.MetasFragment"
         android:label="@string/title_metas"
         tools:layout="@layout/fragment_metas" />
-<!--    <fragment-->
-<!--        android:id="@+id/navigation_task"-->
-<!--        android:name="com.example.medicamentoapp.ui.task."-->
-<!--        android:label="Task"-->
-<!--        tools:layout="@layout/fragment_new_task_sheet"-->
-<!--        />-->
+    <fragment
+        android:id="@+id/navigation_task"
+        android:name="com.example.medicamentoapp.NewTaskSheet"
+        android:label="@string/title_task"
+        tools:layout="@layout/fragment_new_task_sheet"
+        />
 </navigation>
